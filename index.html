@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hokey's</title>
+
+    <!-- tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Kristi&family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stylish&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <!-- banner -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class=" w-[90%] h-auto mx-auto lg:w-full lg:h-[800px] rounded-lg" />
+              <div class="absolute flex gap-5  justify-between transform -translate-y-1/2 left-40 -bottom-4 lg:left-5 lg:-bottom-2">
+                <a href="#slide2" class="btn btn-circle text-white bg-black">❮</a> 
+                <a href="#slide2" class="btn btn-circle text-white bg-black">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/9.jpg" class="w-[90%] h-auto mx-auto lg:w-full lg:h-[800px] rounded-lg" />
+              <div class="absolute flex gap-5  justify-between transform -translate-y-1/2 left-40 -bottom-4 lg:left-5 lg:-bottom-2">
+                <a href="#slide1" class="btn btn-circle text-white bg-black">❮</a> 
+                <a href="#slide1" class="btn btn-circle text-white bg-black">❯</a>
+              </div>
+            </div> 
+          </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
