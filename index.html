@@ -43,9 +43,39 @@
     </style>
 </head>
 <body class="font-manrope">
+  <!-- navbar -->
+  <div class="navbar container mx-auto my-10">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a class="text-[#FF4240] font-bold">Home</a></li>
+            <li><a class="font-bold">About</a></li>
+            <li><a class="font-bold">Pages</a></li>
+            <li><a class="font-bold">Contact</a></li>
+          </ul>
+      </div>
+      <a class="btn btn-ghost text-4xl font-extrabold p-0 m-0">Hockey<span class="text-[#FF4240]">’</span>s</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a class="text-[#FF4240] font-bold">Home</a></li>
+        <li><a class="font-bold">About</a></li>
+        <li><a class="font-bold">Pages</a></li>
+        <li><a class="font-bold">Contact</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end pr-4 lg:pr-0">
+      <a href=""><i class="fa-solid fa-magnifying-glass mr-10 text-gray-400 hidden lg:block"></i></a>
+      <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
+    </div>
+  </div>
+
     <header class="container mx-auto">
         <!-- banner -->
-        <div class="carousel w-full">
+        <div class="carousel w-full lg:relative">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="./Images/1.png" class=" w-[90%] h-auto mx-auto lg:w-full lg:h-[800px] rounded-lg" />
               <div class="absolute flex gap-5  justify-between transform -translate-y-1/2 left-40 -bottom-4 lg:left-5 lg:-bottom-2">
@@ -61,9 +91,9 @@
               </div>
             </div> 
           </div>
-          <div>
-            <h2 class="font-extrabold text-2xl">Meet all the heroes from the field</h2>
-            <p>Gather with us to meet the exceptional heroes shaping our field. Engage, learn, and be inspired by their remarkable journeys.</p>
+          <div class="bg-black w-[90%] lg:w-[566px] mx-auto p-8 lg:p-10 text-center rounded-xl space-y-3 lg:absolute lg:bottom-16 lg:right-52">
+            <h2 class="font-extrabold text-lg lg:text-2xl text-white">Meet all the heroes from the field</h2>
+            <p class="text-sm lg:text-base text text-[#FFFFFF99]">Gather with us to meet the exceptional heroes shaping our field. Engage, learn, and be inspired by their remarkable journeys.</p>
           </div>
     </header>
     <main class="container mx-auto">
@@ -73,7 +103,7 @@
             <h2 class="text-2xl lg:text-4xl font-extrabold mx-auto text-center leading-8">Professional Hockeys Club</h2>
             <p class="text-sm lg:text-base font-medium text-[#13131899] text-center max-w-[350px] lg:max-w-[607px] mx-auto my-4">Dynamic, skilled athletes compete passionately in our professional hockey club, fostering teamwork and thrilling fans with every exhilarating match!!</p>
                 <!-- Facilities -->
-                <div class="grid grid-cols-1 lg:grid-cols-4">
+                <div class="grid grid-cols-1 lg:grid-cols-4 mt-20">
                 
                     <!-- 1st progress -->
                     <div class="card mx-auto items-center text-center">
@@ -128,7 +158,7 @@
             </p>
 
             <!-- Program cards -->
-            <div class="grid gap-20 grid-cols-1 lg:grid-cols-2 px-4">
+            <div class="grid gap-20 grid-cols-1 lg:grid-cols-2 px-4 mt-10">
                 <!-- 1st card -->
                   <div class="card bg-[#13131880] image-full">
                     <figure><img src="./Images/2.png" alt="Shoes" class="w-full"/></figure>
@@ -173,7 +203,7 @@
         <h2 class="text-2xl lg:text-4xl font-extrabold mx-auto text-center leading-8">Our New Products</h2>
         <p class="text-sm lg:text-base font-medium text-[#13131899] text-center max-w-[350px] lg:max-w-[607px] mx-auto my-4">Introducing our latest hockey club products, designed to elevate your game. From innovative equipment to performance apparel, gear up with our premium selection for unmatched on-ice performance.!</p>
         <!--new products -->
-        <div class="grid gap-4 grid-cols-1 lg:grid-cols-2 my-20">
+        <div class="grid gap-4 grid-cols-1 lg:grid-cols-2 my-24">
             <!-- product - 1 -->
             <div class="hero shadow-3xl bg-white border rounded-2xl">
                 <div class="hero-content flex-col lg:flex-row">
@@ -393,13 +423,12 @@
       <!-- Clients Question Section -->
       <section class="container mx-auto my-12 lg:my-24">
         <h2 class="text-2xl lg:text-4xl font-extrabold mx-auto text-center leading-8">Clients Question</h2>
-        <p class="text-sm lg:text-base font-medium text-[#13131899] text-center max-w-[350px] lg:max-w-[607px] mx-auto my-4">Discover the joy of hockey with Hokeys Club! Join our passionate community for fun-filled games, expert coaching, and unforgettable memories on the ice. Your hockey adventure starts here!</p>
-        <div class="flex flex-col lg:justify-between items-center gap-4 shadow-3xl bg-white border rounded-2xl w-[90%] lg:w-full mx-auto">
-          <div class="flex flex-col lg:justify-between items-center gap-1">
+        <p class="text-sm lg:text-base font-medium text-[#13131899] text-center max-w-[350px] lg:max-w-[607px] mx-auto my-8 ">Discover the joy of hockey with Hokeys Club! Join our passionate community for fun-filled games, expert coaching, and unforgettable memories on the ice. Your hockey adventure starts here!</p>
+          <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 p-10 shadow-3xl bg-white border rounded-2xl mx-auto my-20 rounded-lg">
             <div class="">
-              <img src="./Images/11.png" alt="" class="w-[100%] p-5">
+              <img src="./Images/11.png" alt="" class=>
             </div>
-            <div class="">
+            <div class="ml-0 lg:-ml-20">
               <div class="collapse collapse-plus">
                 <input type="radio" name="my-accordion-3" checked="checked" /> 
                 <div class="collapse-title text-xl font-bold">
@@ -411,7 +440,7 @@
               </div>
               <div class="border -border-[#1313181A] w-[95%] mx-auto"></div>
               <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <input type="radio" name="my-accordion-3" /> 
                 <div class="collapse-title text-xl font-bold">
                   Hockey Training
                 </div>
@@ -421,7 +450,7 @@
               </div>
               <div class="border -border-[#1313181A] w-[95%] mx-auto"></div>
               <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <input type="radio" name="my-accordion-3" /> 
                 <div class="collapse-title text-xl font-bold">
                   Private Lessons
                 </div>
@@ -431,7 +460,7 @@
               </div>
               <div class="border -border-[#1313181A] w-[95%] mx-auto"></div>
               <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <input type="radio" name="my-accordion-3" /> 
                 <div class="collapse-title text-xl font-bold">
                   Ski Touring
                 </div>
@@ -441,7 +470,7 @@
               </div>
               <div class="border -border-[#1313181A] w-[95%] mx-auto"></div>
               <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <input type="radio" name="my-accordion-3"/> 
                 <div class="collapse-title text-xl font-bold">
                   Booking
                 </div>
@@ -451,7 +480,7 @@
               </div>
               <div class="border -border-[#1313181A] w-[95%] mx-auto"></div>
               <div class="collapse collapse-plus">
-                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <input type="radio" name="my-accordion-3" /> 
                 <div class="collapse-title text-xl font-bold">
                   Pricings
                 </div>
@@ -471,81 +500,77 @@
       <!-- Get In Touch Section -->
       <section class="container mx-auto my-12 lg:my-24">
         <h2 class="text-2xl lg:text-4xl font-extrabold mx-auto text-center leading-8">Get In Touch</h2>
-        <p class="text-sm lg:text-base font-medium text-[#13131899] text-center max-w-[350px] lg:max-w-[607px] mx-auto my-4">Have questions or want to join? Reach out to Hokeys Club for information on memberships, events, and more. We're here to help!</p>
+        <p class="text-sm lg:text-base font-medium text-[#13131899] text-center max-w-[350px] lg:max-w-[607px] mx-auto mt-8 mb-16">Have questions or want to join? Reach out to Hokeys Club for information on memberships, events, and more. We're here to help!</p>
 
-        <div class="grid gap-4 grid-cols-1 lg:grid-cols-2">
-          <!-- contract info -->
-          <div class="space-y-6  shadow-3xl bg-white border rounded-2xl mx-auto p-4">
-            <div class="card text-primary-content w-[374px] h-[216px] rounded-2xl bg-[#BCED6D19] mx-auto">
-              <div class="p-10 space-y-3">
-                <img src="./Images/Group 1171275317.png" alt="" class="w-[30px] h-[30px]">
-                <p class="text-[#13131899] text-sm">Phone Number : 
-                  </p>
-                <h2 class="text-[#131318] font-extrabold text-xl">(+62) 123-321-543</h2>
+          <div class="flex flex-col lg:flex-row lg:justify-between">
+            <!-- contract info -->
+            <div class="space-y-6 shadow-3xl bg-white border rounded-2xl mx-auto p-4">
+                <div class="card text-primary-content w-[374px] h-[216px] rounded-2xl bg-[#BCED6D19] mx-auto">
+                    <div class="p-10 space-y-3">
+                        <img src="./Images/Group 1171275317.png" alt="" class="w-[30px] h-[30px]">
+                        <p class="text-[#13131899] text-sm">Phone Number :</p>
+                        <h2 class="text-[#131318] font-extrabold text-xl">(+62) 123-321-543</h2>
+                    </div>
                 </div>
-              </div>
-            <div class="card text-primary-content w-[374px] h-[216px] rounded-2xl bg-[#FDDD5F1A] mx-auto">
-              <div class="p-10 space-y-3">
-                <img src="./Images/Group 1171275318.png" alt="" class="w-[30px] h-[30px]">
-                <p class="text-[#13131899] text-sm">Email : 
-                  </p>
-                <h2 class="text-[#131318] font-extrabold text-xl">
-                  hockeys@support.com</h2>
+                <div class="card text-primary-content w-[374px] h-[216px] rounded-2xl bg-[#FDDD5F1A] mx-auto">
+                    <div class="p-10 space-y-3">
+                        <img src="./Images/Group 1171275318.png" alt="" class="w-[30px] h-[30px]">
+                        <p class="text-[#13131899] text-sm">Email :</p>
+                        <h2 class="text-[#131318] font-extrabold text-xl">
+                            hockeys@support.com
+                        </h2>
+                    </div>
                 </div>
-              </div>
-            <div class="card text-primary-content w-[374px] h-[216px] rounded-2xl bg-[#629CF31A] mx-auto">
-              <div class="p-10 space-y-3">
-                <img src="./Images/Group 1171275321.png" alt="" class="w-[30px] h-[30px]">
-                <p class="text-[#13131899] text-sm">Location : 
-                  </p>
-                <h2 class="text-[#131318] font-extrabold text-xl">
-                  152/1 Mohakhali Wireless Gate</h2>
+                <div class="card text-primary-content w-[374px] h-[216px] rounded-2xl bg-[#629CF31A] mx-auto">
+                    <div class="p-10 space-y-3">
+                        <img src="./Images/Group 1171275321.png" alt="" class="w-[30px] h-[30px]">
+                        <p class="text-[#13131899] text-sm">Location :</p>
+                        <h2 class="text-[#131318] font-extrabold text-xl">
+                            152/1 Mohakhali Wireless Gate
+                        </h2>
+                    </div>
                 </div>
-              </div>
-               
-
             </div>
             <!-- form -->
-          
-            <div class="">
-              <form class="grid gap-6 grid-cols-1 lg:grid-cols-2 p-4">
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text text-xl font-extrabold">Your Name</span>
-                  </label>
-                  <input type="text" placeholder="Enter your full name" class="input input-bordered bg-gray-100 text-sm" required />
-                </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text text-xl font-extrabold">Your Email</span>
-                  </label>
-                  <input type="email" placeholder="Enter your email" class="input input-bordered bg-gray-100 text-sm" required />
-                </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text text-xl font-extrabold">Subject</span>
-                  </label>
-                  <input type="text" placeholder="Enter your subject" class="input input-bordered bg-gray-100 text-sm" required />
-                </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text text-xl font-extrabold">Phone Number</span>
-                  </label>
-                  <input type="email" placeholder="Enter your phone number" class="input input-bordered bg-gray-100 text-sm" required />
-                </div>
-                <label class="form-control lg:col-span-2">
-                  <label class="label">
-                    <span class="label-text text-xl font-extrabold">Message</span>
-                  </label>
-                  <textarea class="textarea textarea-bordered h-auto bg-gray-100 text-sm" placeholder="Write your message"></textarea>
-                  
-                </label class="">
-                <div class="form-control lg:col-span-2">
-                  <button class="btn bg-[#FF4240] text-white">Send Message</button>
-                </div>
-              </form>
+            <div class="flex-1">
+                <form class="grid gap-6 grid-cols-1 lg:grid-cols-2 p-4 ">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text text-xl font-extrabold">Your Name</span>
+                        </label>
+                        <input type="text" placeholder="Enter your full name" class="input input-bordered bg-gray-100 text-sm" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text text-xl font-extrabold">Your Email</span>
+                        </label>
+                        <input type="email" placeholder="Enter your email" class="input input-bordered bg-gray-100 text-sm" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text text-xl font-extrabold">Subject</span>
+                        </label>
+                        <input type="text" placeholder="Enter your subject" class="input input-bordered bg-gray-100 text-sm" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text text-xl font-extrabold">Phone Number</span>
+                        </label>
+                        <input type="tel" placeholder="Enter your phone number" class="input input-bordered bg-gray-100 text-sm" required />
+                    </div>
+                    <label class="form-control lg:col-span-2">
+                        <label class="label">
+                            <span class="label-text text-xl font-extrabold">Message</span>
+                        </label>
+                        <textarea class="textarea textarea-bordered h-auto bg-gray-100 text-sm" placeholder="Write your message"></textarea>
+                    </label>
+                    <div class="form-control lg:col-span-2">
+                        <button class="btn bg-[#FF4240] text-white">Send Message</button>
+                    </div>
+                </form>
             </div>
-          </div>
+        </div>
+        
 
           <!-- social media -->
           <div class="bg-[#13131808] rounded-lg py-10 my-4 lg:my-10 w-[90%] lg:w-full mx-auto">
